@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+app.use(require('express-status-monitor')());
+
 const size    = config.colors;
 const rainbow = new Array(size);
 
